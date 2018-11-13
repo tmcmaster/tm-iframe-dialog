@@ -29,7 +29,7 @@ class TmIframeDialog extends PolymerElement {
             }
             iframe {
                 width: 90vw;
-                height: 80vh;
+                height: 75vh;
                 outline: none;
                 box-sizing: border-box;
                 border: solid lightgray 1px;
