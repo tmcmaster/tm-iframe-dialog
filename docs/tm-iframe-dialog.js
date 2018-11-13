@@ -27,7 +27,7 @@ class TmIframeDialog extends PolymerElement {
                 padding: 1vmin;
                 
             }
-            iframe, object {
+            iframe {
                 width: 90vw;
                 height: 80vh;
                 outline: none;
@@ -89,7 +89,6 @@ class TmIframeDialog extends PolymerElement {
                             <paper-button on-tap="_closeSourceDialog">Close</paper-button>
                         </div>
                     </div>
-                    <!--<object data="[[src]]" width="400" height="300" type="text/html">Alternative Content</object>-->
                     <iframe src="[[src]]"></iframe>   
                     <div class="footer">
                         <span class="url">[[src]]</span>
