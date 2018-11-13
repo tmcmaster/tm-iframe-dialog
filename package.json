@@ -1,0 +1,16 @@
+{
+  "name": "tm-iframe-dialog",
+  "description": "Polymer web component to preview an external page in a dialog",
+  "main": "tm-iframe-dialog.js",
+  "dependencies": {
+    "@polymer/paper-button": "^3.0.1",
+    "@polymer/polymer": "^3.0.0",
+    "@vaadin/vaadin-dialog": "^2.2.0"
+  },
+  "devDependencies": {
+    "@polymer/iron-component-page": "^4.0.1",
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.19",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "wct-browser-legacy": "^1.0.0"
+  }
+}

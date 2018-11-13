@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>tm-iframe-dialog demo</title>
+
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <script type="module">
+      import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
+      import '@polymer/iron-demo-helpers/demo-snippet';
+      import '@polymer/paper-button/paper-button';
+
+
+    </script>
+
+    <script type="module" src="../tm-iframe-dialog.js"></script>
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+        paper-button {
+          /*padding-top: 1vh;*/
+          /*padding-bottom: 1vh;*/
+          border: solid lightgray 1px;
+        }
+        div.title {
+          padding-bottom: 2vh;
+          display: flex;
+          flex-direction: column;
+        }
+        ul > li {
+          font-size: 12px;
+        }
+      </style>
+    </custom-style>
+  </head>
+  <body>
+    <script>
+        function openDialog() {
+            let demo = document.getElementById('demo');
+            let dialog = demo.getElementsByTagName('tm-iframe-dialog')[0];
+            console.log('DEMO: ', dialog);
+            dialog.open();
+        }
+    </script>
+
+    <div class="vertical-section-container centered">
+      <div class="title">
+        <h3>Basic tm-iframe-dialog demo</h3>
+        <div class="buttons">
+          <paper-button onclick="openDialog()">Open Dialog</paper-button>
+        </div>
+        <ul>
+          <li>Loading external pages will only work if Cross-Origin security concerns are addressed.</li>
+        </ul>
+      </div>
+
+
+      <demo-snippet id="demo">
+        <template>
+          <tm-iframe-dialog title="Google" src="https://google.com"></tm-iframe-dialog>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>

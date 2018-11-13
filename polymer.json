@@ -1,0 +1,15 @@
+{
+  "npm": true,
+  "lint": {
+    "rules": [
+      "polymer-3"
+    ]
+  },
+  "entrypoint": "docs.html",
+  "sources": [
+    "demo/index.html",
+    "analysis.json"
+  ]
+}
+
+
